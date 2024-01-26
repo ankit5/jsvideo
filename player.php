@@ -65,7 +65,7 @@
 
 
             <video id="video" class="video-js vjs-default-skin" controls preload="auto" playsinline="playsinline" poster="" tabindex="-1" role="application" muted="muted" autoplay="">
-                <source src="?url=<?php print $_GET['url'] ?>" type="application/x-mpegURL">
+                <source src="<?php print $_GET['url'] ?>" type="application/x-mpegURL">
             </video>
         
         <script>
