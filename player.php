@@ -63,7 +63,7 @@
   <p>https://soul.ydc1wes.me/hls2/02/00005/buegmfigy64l_l/master.m3u8?t=Dq0NR8meABOWvAH96f3w-talWSYeCVn00o7GEUG5BEY&s=1706251122&e=14400&f=29289&i=0.0&sp=0
   </p>
   <p>
-    <?php print urldecode($_GET['url'])?>
+    <?php print $_GET['url']?>
   </p>
   <div class="container">
     <div class="video-player">
