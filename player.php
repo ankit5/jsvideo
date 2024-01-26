@@ -65,7 +65,7 @@
 
 
             <video id="video" class="video-js vjs-default-skin" controls preload="auto" playsinline="playsinline" poster="" tabindex="-1" role="application" muted="muted" autoplay="">
-                <source src="<?php print $_GET['url'] ?>" type="application/x-mpegURL">
+                <source src="https://soul.ydc1wes.me/hls2/02/00005/8us24zf0gd3d_l/index-v1-a1.m3u8?t=TQhLLZODlllNmTHSDaohtSRyGce775IBWAUjnI2SKxQ&s=1706230736&e=14400&f=29305&i=0.0&sp=0" type="application/x-mpegURL">
             </video>
         
         <script>
