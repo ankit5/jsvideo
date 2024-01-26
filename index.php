@@ -30,7 +30,7 @@
  
   
   <div id="play">
-    <iframe src="http://hdmovies2.online/player.php" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0%;left:0px;right:0px;bottom:0px" height="100%" width="100%" frameborder="0"></iframe>
+    <iframe src="http://localhost:8002/player.php" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0%;left:0px;right:0px;bottom:0px" height="100%" width="100%" frameborder="0"></iframe>
   
   </div>
 </body>
