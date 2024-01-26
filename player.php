@@ -59,17 +59,12 @@
 </style>
 </head>
 <body>
-  <h1>Video.js Example Embed</h1>
-  <p>https://soul.ydc1wes.me/hls2/02/00005/buegmfigy64l_l/master.m3u8?t=Dq0NR8meABOWvAH96f3w-talWSYeCVn00o7GEUG5BEY&s=1706251122&e=14400&f=29289&i=0.0&sp=0
-  </p>
-  <p>
-    <?php print $_GET['url']?>
-  </p>
+  
   <div class="container">
     <div class="video-player">
 
 
-            <video id="video" class="video-js vjs-default-skin" controls preload="auto" playsinline="playsinline" poster="" tabindex="-1" role="application" muted="muted" autoplay="">
+            <video id="video" class="video-js vjs-default-skin" controls preload="auto" playsinline="playsinline" poster="" tabindex="-1" role="application" autoplay="">
                 <source src="<?php print $_GET['url']?>" type="application/x-mpegURL">
             </video>
         
