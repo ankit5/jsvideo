@@ -11,6 +11,7 @@
   <!-- Uses the latest versions of video.js and videojs-contrib-hls.
 
   To use specific versions, please change the URLs to the form: -->
+  
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link href="https://unpkg.com/video.js@5.16.0/dist/video-js.css" rel="stylesheet">
   <script src="https://unpkg.com/video.js@5.16.0/dist/video.js"></script>
@@ -63,26 +64,23 @@
     <div class="video-player">
 
 
-            <video id="video" class="video-js vjs-default-skin" controls preload="auto" playsinline poster="https://anym3u8player.com/og_video.png">
-                <source src="https://soul.ydc1wes.me/hls2/02/00005/8us24zf0gd3d_l/index-v1-a1.m3u8?t=TQhLLZODlllNmTHSDaohtSRyGce775IBWAUjnI2SKxQ&s=1706230736&e=14400&f=29305&i=0.0&sp=0" type="application/x-mpegURL">
+            <video id="video" class="video-js vjs-default-skin" controls preload="auto" playsinline="playsinline" poster="" tabindex="-1" role="application" muted="muted" autoplay="">
+                <source src="?url=<?php print $_GET['url'] ?>" type="application/x-mpegURL">
             </video>
         
         <script>
         
             var player = videojs("video", {
-                autoplay: false,
-                muted: false,
-                controls: true,
-                playsinline: true, // Add playsinline attribute for inline playback on iOS
+                autoplay: true,
+                muted: false, // Add playsinline attribute for inline playback on iOS
             });
-
+            $('#video').play();
             player.on("play", function() {
                 player.poster("");  // Remove the poster image
             });
         </script>
         
 
-        <script>setupVideoPlayer('aHR0cHM6Ly9zb3VsLnlkYzF3ZXMubWUvaGxzMi8wMi8wMDAwNS84dXMyNHpmMGdkM2RfbC9pbmRleC12MS1hMS5tM3U4P3Q9VFFoTExaT0RsbGxObVRIU0Rhb2h0U1J5R2NlNzc1SUJXQVVqbkkyU0t4USZzPTE3MDYyMzA3MzYmZT0xNDQwMCZmPTI5MzA1Jmk9MC4wJnNwPTA=', true);</script>
 </div>
   
  
